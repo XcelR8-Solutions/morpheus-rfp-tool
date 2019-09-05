@@ -1,0 +1,465 @@
+@company-link-width: 200px;
+
+
+
+body[data-page*=admin-usage-index] {
+  .usage {
+
+    //.company-dropdown-container {
+    //  .dropdown {
+    //    .lbl {
+    //      padding: 0 5px 0 10px;
+    //      color: @mdgray;
+    //      font-size: 15px;
+    //      font-weight: 300;
+    //    }
+	//
+    //    .link {
+    //      &.company-link {
+    //        width: @company-link-width;
+    //        display: inline-block;
+    //        padding: 12px;
+    //        font-size: 14px;
+    //        color: @hblack;
+    //        border: 1px solid @gray;
+    //        background: transparent url(icons/downvote_std.png) right 10px top 17px no-repeat;
+	//
+    //        &:hover {
+    //          text-decoration: none;
+    //          background-color: transparent;
+    //        }
+	//
+    //        &:active {
+    //          text-decoration: none;
+    //          background-color: transparent;
+    //        }
+	//
+    //        &:focus {
+    //          text-decoration: none;
+    //          background-color: transparent;
+    //        }
+	//
+    //        &.dropdown-active {
+    //          background-image: url(icons/upvote_std.png);
+    //        }
+	//
+    //        .image {
+    //          float: right;
+    //          width: 11px;
+    //          padding-top: 7px;
+    //        }
+    //      }
+    //    }
+	//
+    //    .dropdown-menu {
+    //      left: 57px;
+    //      top: 98%;
+    //      width: @company-link-width;
+    //      margin: 0;
+    //      padding: 0;
+    //      border-radius: 0;
+    //      border-top: 1px solid @white;
+    //      box-shadow: none;
+	//
+    //      .item {
+    //        .link {
+    //          padding: 12px;
+    //          font-size: 14px;
+    //          color: @hblack;
+    //          font-weight: 300;
+	//
+    //          &:hover {
+    //            text-decoration: none;
+    //            background-image: none;
+    //            background-color: @ltgray;
+    //          }
+	//
+    //          &:active {
+    //            text-decoration: none;
+    //            background-image: none;
+    //            background-color: @ltgray;
+    //          }
+	//
+    //          &:focus {
+    //            text-decoration: none;
+    //            background-image: none;
+    //            background-color: @ltgray;
+    //          }
+    //        }
+    //      }
+    //    }
+    //  }
+    //}
+
+    //table.table {
+    //  thead {
+    //    tr {
+    //      th {
+    //        padding: 10px;
+    //        font-weight: 300;
+    //        color: @hblack;
+    //        border-bottom: 1px solid #ddd;
+    //        background-color: transparent;
+    //      }
+    //    }
+    //  }
+	//
+    //  tbody {
+    //    tr {
+    //      &:nth-child(odd) {
+    //        background-color: @ltgray;;
+    //      }
+	//
+    //      td {
+    //        padding: 10px;
+    //        text-align: left;
+    //        color: @hblack;
+    //        border: none;
+    //      }
+    //    }
+    //  }
+    //}
+	//
+    //.usage-row {
+    //  padding-top: 28px;
+    //  margin-bottom: 43px;
+    //  text-align: center;
+    //  .percent-rate {
+    //    padding-top: 39px;
+    //    .percent-progress {
+    //      .percent-text {
+    //        margin-bottom: 4px;
+    //        span {
+    //          font-size: 32px;
+    //          color: @hblack;
+    //        }
+    //      }
+    //      .percent-line {
+    //        margin-bottom: 15px;
+    //        background-color: #e7e7e6;
+    //        height: 15px;
+    //        text-align: left;
+    //      }
+    //      width: 160px;
+    //      margin: 0 auto;
+    //    }
+    //  }
+    //  .counts {
+    //    color: @hblack;
+    //    font-size: 32px;
+    //    margin-bottom: 15px;
+    //    .deltaArrow {
+    //      margin-right: 5px;
+    //      img {
+    //        height: 16px;
+    //      }
+    //    }
+    //  }
+    //  .chart-title {
+    //    color: @hblack;
+    //    font-size: 15px;
+    //  }
+    //  .change-text {
+    //    color: @mdgray;
+    //    font-size: 13px;
+    //    margin-top: -1px;
+    //    .deltaPercent {
+    //      margin-right: 1px;
+    //      &.up {
+    //        color: @green;
+    //      }
+    //      &.down {
+    //        color: @red;
+    //      }
+    //    }
+    //  }
+    //}
+
+    //.admin-usage-container {
+    //  padding-top: 34px;
+    //  .count-container {
+    //    margin-top: 58px;
+    //  }
+    //  .usage-infrastructure {
+    //    .count-container {
+    //      margin-top: 33px;
+    //      margin-bottom: 7px;
+    //    }
+    //  }
+    //  .row {
+    //    margin-left: 0;
+	//
+    //  }
+    //  .section-title {
+    //    font-size: 13px;
+    //    text-transform: capitalize;
+    //    margin: 0;
+    //    letter-spacing: 1px;
+    //    color: @sectionGray;
+    //  }
+	//
+    //  ul.customer-poc-list {
+    //    list-style: none;
+    //    padding-left: 0;
+		//border-bottom: 1px solid @graphgrey;
+    //    margin-bottom: 15px;
+    //    li {
+    //      display: inline-block;
+    //      padding: 0 10px;
+    //      cursor: pointer;
+    //      &:first-of-type {
+    //        margin-right: 15px;
+    //      }
+    //    }
+    //    li.section-title {
+		//	border-bottom: none;
+    //      &:hover {
+	//
+    //      }
+    //      &.active {
+    //        border-bottom: 3px solid @blue;
+    //      }
+    //    }
+    //  }
+	//
+    //  .usage-users-container {
+		//  margin-bottom: 40px;
+    //    div.user-tables-container {
+    //      table.poc-usage-table {
+	//
+    //      }
+    //      table.customer-usage-table {
+    //        display: none;
+    //      }
+    //    }
+    //  }
+	//
+    //  .usage-overview {
+    //    .organization-logo {
+    //      padding-top: 18px;
+    //    }
+    //    .login-per-week-stats {
+    //      padding-top: 35px;
+    //    }
+    //    .last-login-stats {
+    //      padding-top: 18px;
+    //    }
+    //  }
+	//
+    //  .usage-provisioning {
+	//
+    //    .instance-stats {
+    //      padding-top: 15px;
+    //    }
+    //    .backup-success-rate {
+    //      padding-top: 53px;
+    //    }
+    //  }
+	//
+    //  .usage-infrastructure {
+	//
+    //  }
+	//
+    //  .usage-backups {
+	//
+    //  }
+	//
+    //  .usage-monitoring {
+	//
+    //  }
+
+      ////CHARTS MARKUP
+      //.charts {
+      //  margin: 0;
+      //  display: flex;
+      //  @media (max-width: 776px) {
+      //    .justify-content(center);
+      //  }
+      //  .donut-chart {
+      //    flex: auto;
+      //    height: auto;
+      //    svg {
+      //      width: 104px;
+      //      text {
+      //        font-size: 24px;
+      //      }
+      //    }
+      //    .caption {
+      //      p {
+      //        margin: 0;
+      //      }
+      //      p.chart-title {
+      //        color: @hblack;
+      //        font-size: 15px;
+      //      }
+      //      p.change-text {
+      //        color: @mdgray;
+      //        font-size: 13px;
+      //        margin-top: 1px;
+      //      }
+      //    }
+      //  }
+      //  .donut-chart:last-child {
+      //    margin-right: 0;
+      //  }
+      //}
+	  //
+      //.backup-status {
+      //  margin-bottom: 20px;
+      //  margin-top: 32px;
+      //  max-width: 230px;
+      //  margin-left: auto;
+      //  margin-right: auto;
+      //  .stop-stats {
+      //    margin-top: 20px;
+      //  }
+      //  .backup-stopped-line {
+      //    background-color: #e7e7e6;
+      //    height: 2px;
+      //    width: 200px;
+      //    text-align: left;
+      //    .stopLineSvg {
+      //      vertical-align: top;
+      //    }
+      //  }
+      //  .backup-running-line {
+      //    background-color: #e7e7e6;
+      //    height: 2px;
+      //    width: 200px;
+      //    text-align: left;
+      //    .runLineSvg {
+      //      vertical-align: top;
+      //    }
+      //  }
+      //  .backup-svg-text {
+      //    text-align: left;
+      //    font-size: 15px;
+      //    margin-left: 7px;
+      //    margin-right: 12px;
+      //    span {
+      //      &:last-of-type {
+      //        float: right;
+      //      }
+      //    }
+      //  }
+      //}
+	  //
+      //.percent-rate {
+      //  margin: 0 auto;
+      //}
+	  //
+      //.monitoring-availability {
+      //  .monitoring-availability-svg-text {
+      //    span.monitoring-availability-count {
+      //      font-size: 32px;
+      //      color: @hblack;
+      //    }
+      //  }
+      //  .monitoring-availability-line {
+      //    background-color: #e7e7e6;
+      //    height: 15px;
+      //  }
+      //  .caption {
+      //    margin-top: 6px;
+      //  }
+      //}
+	  //
+      //.csm-donuts {
+      //  margin-top: 11px;
+      //}
+      //.history-stats {
+      //  &.apps-stats {
+      //    margin-top: 24px;
+      //  }
+      //  max-width: 230px;
+      //  margin: 0 auto;
+      //  .history-chart {
+      //    margin-top: 9px;
+      //    color: #b5b5b6;
+      //    @media (max-width: 767px) {
+      //      .flex-display();
+      //      .flex-direction(column);
+      //      .align-items(center);
+      //    }
+      //    .icon {
+      //      height: 12px;
+      //    }
+      //    svg.history-count {
+      //      margin-bottom: 8px;
+      //    }
+      //    .history-count {
+      //      overflow: visible;
+	  //
+      //      &.blue {
+      //        color: @blue;
+      //      }
+      //      &.gray {
+      //        color: @gray;
+      //      }
+      //    }
+      //    #organization-count-chart, #checks-count-chart, #backups-configured-count-chart, #backups-size-count-chart {
+      //      fill: url(#log-gradient);
+      //    }
+	  //
+      //    #login-count-chart {
+      //      fill: url(#login-gradient);
+      //    }
+	  //
+      //    #apps-count-chart {
+      //      fill: url(#app-gradient);
+      //    }
+	  //
+      //    #responseTime-count-chart {
+      //      fill: url(#responseTime-gradient);
+      //    }
+	  //
+      //    #backups-size-count-chart {
+      //      fill: url(#backupsSize-gradient);
+      //    }
+	  //
+      //    .history-chart-line {
+      //      width: 100%;
+      //    }
+      //    .stat {
+      //      margin-top: -1px;
+      //    }
+      //    .stop1 {
+      //      stop-color: currentColor;
+      //    }
+      //    .stop2 {
+      //      stop-color: currentColor;
+      //      stop-opacity: 0;
+      //    }
+	  //
+      //  }
+      //  .checks-chart {
+      //    margin-top: 26px;
+      //  }
+      //  .responseTime-chart {
+      //    margin-top: 26px;
+      //  }
+      //  .organization-chart {
+      //    margin-top: 26px;
+      //  }
+      //  .backups-size-chart {
+      //    margin-top: 26px;
+      //  }
+      //  .backups-configured-chart {
+      //    margin-top: 26px;
+      //  }
+      //  .history-count-text {
+      //    height: 35px;
+      //    width: 85px;
+      //    text-align: center;
+      //    float: right;
+      //    .history-count {
+      //      color: @darkest-black;
+      //      font-size: 25px;
+      //      position: relative;
+      //    }
+      //  }
+      //}
+      ////END CHARTS MARKUP
+    //}
+  }
+}

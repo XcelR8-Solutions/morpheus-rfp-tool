@@ -1,0 +1,207 @@
+@import "colors.less";
+.charts {
+	margin-bottom:60px;
+
+	.donut-chart {
+		height:186px;
+		svg {
+			display:block;
+			width: 160px;
+			margin: 0 auto;
+			.chart-bg, .chart-line {
+				stroke-width: 6px;
+				stroke-linecap: round;
+				stroke-dasharray: 160 9999;
+				stroke-dashoffset:-60px;
+				fill:transparent;
+			}
+			.chart-bg {
+				stroke: #ccc;
+
+			}
+			.chart-line {
+				stroke-dasharray: 0 9999;
+				stroke: @blue;
+				transition:1s ease-out stroke-dasharray;
+
+			}
+			text {
+				fill: @text-blue;
+				font-size: 24px;
+			}
+		}
+		&.blue {
+			.chart-line {
+				stroke: @red;
+			}
+
+			text {
+				fill: @red;
+			}
+		}
+
+		&.grey {
+			.chart-line{
+				stroke: @medium-black;
+			}
+			text {
+				fill: @medium-black;
+			}
+		}
+		.caption {
+			text-transform: uppercase;
+			font-size: 18px;
+			color: @chart-grey;
+			text-align: center;
+		}
+	}
+}
+.chart-controls {
+	margin-top:30px;
+}
+.chart-types {
+		.flex-display();
+		.flex-direction( row);
+		.justify-content( center);
+		margin-bottom: 10px;
+		.chart-type {
+			padding:6px 16px;
+			.flex(0 1 auto);
+			margin:0;
+			width:100px;
+			background-color: @table-bkg-stripe;
+			border-top: 1px solid @border;
+			border-bottom: 1px solid @border;
+			border-bottom: 1px solid @border;
+			text-align: center;
+			cursor: pointer;
+			color: @grey-deactivated;
+			@media (max-width: 767px) {
+				min-height: 44px !important;
+				line-height: 44px;
+			}
+			&:first-of-type{
+				border-left: 1px solid @border;
+				border-radius: 2px 0 0 2px;
+			}
+			&:last-of-type{
+				border-right: 1px solid @border;
+				border-radius:  0 2px 2px 0;
+			}
+			&.active {
+				border-color: @blue;
+				color:#fff;
+				background-color: @blue;
+				&.active:hover {
+					border-color: @blue;
+					background-color: @blue;
+
+				}
+			}
+			&:hover {
+				border-color: @light-blue;
+				color:#fff;
+				background-color: @light-blue;
+			}
+		}
+
+	}
+.legend {
+	overflow: auto;
+	text-transform: uppercase;
+	font-size: 11px;
+	ul {
+		padding:0;
+		margin: 10px 0;
+		list-style: none;
+		.flex-display();
+		.justify-content( flex-end);
+		li {
+			display: inline-block;
+			cursor: pointer;
+			padding: 4px 8px;
+			.color {
+				height:10px;
+				width:10px;
+				display: inline-block;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+.c3-tooltip-container {
+	background-color: @white;
+	border: 1px solid @border;
+	width:250px;
+	padding:15px;
+	border-radius: 2px;
+	box-shadow: 2px 2px 3px -1px @border;
+	.tooltip-header {
+		border-bottom: 1px solid @border;
+		margin-bottom:5px;
+	}
+	.row{
+		padding:0 5px;
+		.color {
+			height:11px;
+			width:11px;
+			display: inline-block;
+			margin-right:5px;
+		}
+		.value{
+			display: inline-block;
+			text-align: right;
+			float: right;
+		}
+
+	}
+}
+
+
+
+
+.tick {
+	text {
+		fill: @icon;
+	}
+	line {
+		stroke: @grey-deactivated;
+	}
+}
+path.domain {
+	stroke: @grey-deactivated;
+}
+.c3-line {
+	stroke-width: 1.5px;
+}
+.c3-ygrid{
+  stroke-dasharray: 0, 0;
+}
+.c3-circle {
+	opacity: 0 !important;
+}
+._expanded_ {
+	opacity:1 !important;
+}
+.c3 svg {
+	font: 11px 'Nunito';
+	font-weight: 300;
+}
+.c3-axis{
+    .domain{display:none;}
+}
+.log-chart-container{
+  	padding-top: 0px; margin-top: 10px;
+  	h2{float:left; margin-left: 18px; margin-top:0;}
+	#legend{
+		float: right;
+		.custom-legend{
+			display: inline; list-style: none;
+			margin-right: 12px;
+			.custom-legend-color{display:inline-block; width:10px; height:10px; margin-right:8px;}
+			.custom-legend-label{display:inline-block;font-size:13px; text-transform: uppercase;}
+		}
+	   .custom-legend:last-child{margin-right:0;}
+	}
+}

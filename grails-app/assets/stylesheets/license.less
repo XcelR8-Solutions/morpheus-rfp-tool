@@ -1,0 +1,180 @@
+@import "colors.less";
+
+.license-progress {
+	position: relative;
+	width:100%;
+	padding-top:50px;
+	margin-top:50px;
+	.bar-wrapper{
+		padding:6px 4px 0;
+		position: relative;
+	}
+	.circle {
+		position: absolute;
+		height: 28px;
+		width: 28px;
+		border-radius: 16px;
+		border: 8px solid @blue;
+		background-color: #fff;
+		top:0;
+		&.end {
+			right:0;
+			border-color: @gray;
+		}
+		&.start {
+			left:0;
+		}
+		&.current {
+			left: ~"calc(0%)";
+			transition: .5s left ease-out;
+			border-color: @ltblue;
+			z-index: 10;
+		}
+	}
+	.bar {
+		height:15px;
+		background-color: @graphgrey;
+		width:100%;
+		.current-license {
+			background-color: @blue;
+			height:15px;
+			width:0%;
+			transition: .5s width ease-out;
+		}
+	}
+	.time-left {
+		background-color:@ltblue;
+		color: @hblack;
+		padding: 8px 14px;
+		border-radius: 2px;
+		font-size: 13px;
+		position: absolute;
+		transition: .5s left ease-out;
+		left:~"calc(0% - 33px)";
+		top:0;
+		&:after {
+			content:'';
+			position: absolute;
+			bottom:-11px;
+			left:~"calc(50% - 6px)";
+			width: 0;
+			height: 0;
+			border-left: 9px solid transparent;
+			border-right: 9px solid transparent;
+
+			border-top: 11px solid @ltblue;
+		}
+	}
+	.dates {
+		margin-top: 10px;
+		color: @hblack;
+		font-size: 14px;
+	}
+}
+
+
+.license-key, .license-key-display {
+	word-wrap: break-word;
+	width: 100%;
+	border: none;
+	line-height: 1.8em;
+}
+
+.license-details-container {
+	margin: 40px 0 52px;
+	dt, dd {
+		font-weight: 300 !important;
+		line-height: 22px;
+	}
+}
+
+.temp-notification {
+	opacity: 0;
+	font-size: 16px;
+	background-color: fade(@green,20%);
+	color: @green;
+	padding: 4px 8px;
+	border: 1px solid @green;
+	display: inline-block;
+	&.growl {
+		animation: 2.5s notify;
+	}
+}
+
+@keyframes notify {
+	0% {
+		opacity:0
+	}
+	30% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.appliance-main-container {
+	.section-title {
+		margin-top:74px;
+	}
+}
+
+.appliance-stat {
+	margin-top:24px;
+	.title {
+		margin-bottom:6px;
+	}
+
+}
+.stat-progress {
+	.bar-bg {
+		background-color: @graphgrey;
+		height: 18px;
+		.bar {
+			background-color: @blue;
+			height: 18px;
+		}
+	}
+	.stat-pct {
+		font-size: 16px;
+		color: @hblack
+	}
+	.deets {
+		margin-top: 16px;
+	}
+	.legend {
+		display:inline-block;
+		margin-right: 35px;
+		font-size: 13px;
+		color: @hblack;
+		text-transform: none;
+		&:before {
+			content:'';
+			height: 15px;
+			width: 15px;
+			display:inline-block;
+			background-color: @blue;
+			vertical-align: sub;
+		}
+		&.toats:before {
+			background-color: @graphgrey !important;
+
+		}
+	}
+	&.dkblue {
+
+		.bar {
+			background-color: @dkblue;
+		}
+		.legend:before {
+			background-color: @dkblue;
+		}
+	}
+}
+
+.request-new-license {
+	margin-top:24px;
+}

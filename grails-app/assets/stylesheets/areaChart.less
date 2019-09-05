@@ -1,0 +1,44 @@
+@import "colors.less";
+
+svg.area-chart {
+	color: @blue;
+	overflow: visible;
+	.area {
+
+		fill: url(#chart-gradient);
+	}
+	.line {
+		stroke: currentColor;
+		stroke-width: 2;
+		fill:none;
+	}
+
+}
+.grey {
+	svg.area-chart {
+		color: @grey-deactivated;
+		.area {
+			fill: url(#chart-gradient-grey);
+		}
+	}
+}
+#chart-gradient {
+	color: @blue;
+	.stop1 {
+	  stop-color: currentColor;
+	}
+	.stop2 {
+	  stop-color: currentColor;
+	  stop-opacity: 0;
+	}
+}
+#chart-gradient-grey {
+	color: @grey-deactivated;
+	.stop1 {
+	  stop-color: currentColor;
+	}
+	.stop2 {
+	  stop-color: currentColor;
+	  stop-opacity: 0;
+	}
+}

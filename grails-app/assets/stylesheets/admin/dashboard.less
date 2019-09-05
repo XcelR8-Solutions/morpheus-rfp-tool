@@ -1,0 +1,102 @@
+.admin-dashboard {
+  .admin-dashboard-container {
+    .usage-row {
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+      .history-stats {
+        max-width: 230px;
+        margin: 0 auto;
+        .history-chart {
+          color: #b5b5b6;
+          .icon {
+            height: 12px;
+          }
+          svg.history-count {
+            margin-bottom: 24px;
+          }
+          svg.instance-count-chart {
+            margin-bottom: 15px;
+          }
+          .history-count-svg {
+            overflow: visible;
+            margin-top: -7px;
+            margin-bottom: 7px;
+            &.blue {
+              color: @blue;
+            }
+            &.gray {
+              color: @gray;
+            }
+          }
+          #instance-count-chart {
+            fill: url(#instance-gradient);
+          }
+
+          .history-chart-line {
+            width: 100%;
+          }
+          .stat {
+            margin-top: -1px;
+          }
+          .stop1 {
+            stop-color: currentColor;
+          }
+          .stop2 {
+            stop-color: currentColor;
+            stop-opacity: 0;
+          }
+        }
+
+        .history-count-text {
+          height: 35px;
+          width: 85px;
+          text-align: center;
+          float: right;
+          .history-count {
+            color: @darkest-black;
+            font-size: 25px;
+            position: relative;
+          }
+        }
+      }
+      .count-container {
+        margin-top: 58px;
+      }
+      .organization-chart {
+        margin-top: 26px;
+      }
+      .counts {
+        color: @hblack;
+        font-size: 32px;
+        margin-bottom: 15px;
+        .deltaArrow {
+          margin-right: 5px;
+          img {
+            height: 16px;
+          }
+        }
+      }
+      .change-text {
+        color: @mdgray;
+        font-size: 13px;
+        margin-top: -1px;
+        .deltaPercent {
+          margin-right: 1px;
+          &.up {
+            color: @green;
+          }
+          &.down {
+            color: @red;
+          }
+        }
+      }
+      .chart-title {
+        color: @hblack;
+        font-size: 14px;
+      }
+    }
+    //END CHARTS MARKUP
+  }
+}
+

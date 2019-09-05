@@ -1,0 +1,214 @@
+body[data-page*=spud-contact] {
+  section.contact-us-hero {
+    height: 440px;
+    padding: 0;
+    border-bottom: 2px solid @red;
+    .contact-usbg:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+    .contact-usbg {
+      background: url('backgrounds/contact_hero.png');
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+    }
+
+    @media (max-width: 1170px) {
+
+    }
+    @media (max-width: 992px) {
+
+    }
+    @media (max-width: 768px) {
+
+    }
+    @media (max-width: 480px) {
+
+    }
+  }
+  .hideIt {
+    //display: none;
+  }
+  section.contact-us {
+    article {
+      padding-bottom: 70px;
+      .header {
+        margin-bottom: 25px;
+
+        h1 {
+          color: @hblack;
+          font-family: 'Arvo', serif;
+          font-size: 32px;
+          line-height: 44px;
+          margin-top: 30px;
+        }
+      }
+      .flex(1 0 auto);
+
+      div {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      .contact-form {
+        label, input {
+          display: block;
+        }
+        label {
+          color: @hblack;
+          font-size: 14px;
+          margin-bottom: 4px;
+          font-weight: 300;
+        }
+        .contact-input {
+          width: 100%;
+          height: 32px;
+          margin-bottom: 22px;
+          color: @hblack;
+          border: 1px solid #ccc;
+        }
+        .contact-message {
+          width: 100%;
+          height: 152px;
+          margin-bottom: 18px;
+          color: @hblack;
+          border: 1px solid #ccc;
+        }
+        .send-contact-form {
+          background-color: @red;
+          font-size: 14px;
+          color: @white;
+          padding: 6px 38px;
+          border: none;
+          -webkit-transition: background-color 0.25s ease-in; /* For Safari 3.1 to 6.0 */
+          transition: background-color 0.25s ease-in;
+        }
+        .send-contact-form:hover {
+          background-color: #FF8877;
+        }
+        .send-contact-form:active {
+          background-color: #D85544;
+        }
+      }
+
+      .details {
+        margin-left: 150px;
+        @media (max-width: 768px) {
+          margin-top: 15px;
+          margin-left: 0px;
+        }
+        .contact-info-container {
+          margin-bottom: 47px;
+          a {
+            color: @red;
+            &:hover {
+              color: red;
+            }
+            &:active {
+              color: @red;
+            }
+          }
+          p.mapIt {
+            color: red;
+            cursor: pointer;
+          }
+          h5 {
+            color: @hblack;
+            font-size: 13px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+          }
+          p {
+            color: @red;
+            font-size: 14px;
+            margin-bottom: 0px;
+            margin-top: 0;
+          }
+          .contact-info-social {
+            color: @red;
+            a {
+              color: @red;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .mail-success-msg-container {
+      text-align: center;
+      h1 {
+        color: @hblack;
+        font-family: 'Arvo', serif;
+        font-size: 32px;
+        line-height: 44px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+      p {
+        color: @hblack;
+      }
+      .show-form {
+        color: @red;
+        cursor: pointer;
+      }
+    }
+  }
+
+  section.contact-us-trial {
+    height: 380px;
+    border-top: 2px solid #d9d8d8;
+    border-bottom: 2px solid @red;
+    h1 {
+      margin-top: 100px;
+      margin-bottom: 35px;
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+    }
+    .contact-us-trialbg {
+      background: url('backgrounds/contact_footer_hero.png');
+
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+    }
+    .contact-us-trialbg:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+}

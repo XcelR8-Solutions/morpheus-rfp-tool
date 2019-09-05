@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="icons" style="enable-background:new 0 0 44 56;" x="0px" y="0px" viewBox="0 0 44 56" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="pattern-0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" viewBox="0 0 100 100">
+      <path d="M 0 0 L 50 0 L 50 100 L 0 100 Z" style="fill: black;"/>
+    </pattern>
+  </defs>
+  <style type="text/css">
+	.st0{fill:none;stroke:#818383;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+  <g>
+    <polygon class="st0" points="43 55 1 55 1 54.973 42.958 54.974 43 46.898" style="stroke: rgb(62, 125, 148);" transform=""/>
+    <path d="M 14.706 49.437 Z" style="stroke: black; fill: none;"/>
+  </g>
+  <polygon class="st0" points="37.929 32.802 35.452 30.327 23.429 42.351 23.429 5.302 19.429 5.302 19.429 42.353 7.404 30.328 4.929 32.802 21.429 49.302" style="fill: rgb(243, 120, 101); stroke: rgb(243, 120, 101);"/>
+  <path d="M 21.746 21.658 Z" style="stroke-width: 50; stroke: rgb(129, 131, 131); fill: rgb(129, 131, 131);"/>
+  <path d="M 34.05 34.406 Z" style="stroke: black; fill: none;"/>
+  <path d="M 33.543 34.469 Z" style="stroke: black; fill: none;"/>
+  <path d="M 32.021 35.801 Z" style="stroke: black; fill: none;"/>
+  <path d="M 31.957 36.626 Z" style="stroke: black; fill: none;"/>
+  <path d="M 31.133 35.484 Z" style="stroke: black; fill: none;"/>
+  <path d="M 20.478 32.123 Z" style="stroke: black; fill: none;"/>
+  <g transform="matrix(-1, 0, 0, 1, 44, -0.19027)">
+    <polygon class="st0" points="43 55 1 55 1 54.973 42.958 54.974 43 46.898" style="stroke: rgb(62, 125, 148);" transform=""/>
+    <path d="M 14.706 49.437 Z" style="stroke: black; fill: none;"/>
+  </g>
+</svg>

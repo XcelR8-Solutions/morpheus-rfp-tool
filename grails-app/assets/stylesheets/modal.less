@@ -1,0 +1,118 @@
+.basic-modal-content {
+  display: none;
+}
+
+/* Overlay */
+.simplemodal-overlay {
+  background-color: #000;
+}
+
+/* Container */
+//.simplemodal-container {
+//  height: 466px;
+//  width: 600px;
+//  background-color: #ffffff;
+//  z-index: 10000 !important;
+//  .modal-header {
+//    height: 64px;
+//    padding: 0 20px;
+//    background-color: #404548;
+//    position: fixed;
+//    width: 600px;
+//    z-index: 3199;
+//    .modal-title {
+//      color: #fff;
+//      font-size: 20px;
+//      font-weight: 500;
+//      line-height: 64px;
+//    }
+//  }
+//  .modal-body {
+//    padding: 75px 30px 30px;
+//    .title {
+//      padding-bottom: 30px;
+//      font-size: 18px;
+//      font-weight: 400;
+//      color: #555;
+//    }
+//  }
+//  a.modalCloseImg {
+//    background: url('modal_closeBtn.png') no-repeat;
+//    width: 25px;
+//    height: 29px;
+//    display: inline;
+//    z-index: 3200;
+//    position: absolute;
+//    top: 23px;
+//    right: 10px;
+//    cursor: pointer;
+//  }
+//}
+
+.create-license-modal, .edit-license-modal, .renew-license-modal, .edit-user-modal {
+  h2 {
+    padding: 0;
+    margin: 10px 0;
+  }
+  .edit-license-form-container, .renew-license-form-container, .edit-user-form-container {
+    .disabled {
+      color: #808080;
+    }
+    .row {
+      margin-bottom: 10px;
+    }
+    .input-container {
+      padding-left: 0;
+      padding-right: 0;
+      border: 1px solid #ccc;
+      .input-image {
+        float: left;
+        background-color: @blue;
+        padding: 7px;
+        width: 39px;
+        height: 39px;
+        text-align: center;
+        img {
+          max-height: 25px;
+          max-width: 25px;
+        }
+      }
+      .input-item-size {
+        float: right;
+        background-color: @white;
+        input {
+          height: 39px;
+          width: 188px;
+          border: none;
+          padding-left: 7px;
+        }
+        select {
+          cursor: pointer;
+          padding: 8px 8px 8px 8px;
+          margin-right: -1px;
+          border-radius: 0;
+          border: none;
+          box-shadow: none;
+          background-color: @red;
+          background-image: none;
+          color: @white;
+          -webkit-appearance: none;
+        }
+
+        select:focus {
+          outline: none;
+        }
+      }
+      .input-item {
+        input {
+          height: 39px;
+          width: 228px;
+          border: none;
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+}
+
+

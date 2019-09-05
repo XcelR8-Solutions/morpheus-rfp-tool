@@ -1,0 +1,48 @@
+table{
+  .btn{
+    min-width: 97px;
+    padding: 3px 20px;
+  }
+}
+
+.btn {
+  padding: 8px 20px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: background-color 0.25s ease-in, color 0.25s ease-in; /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.25s ease-in, color 0.25s ease-in;
+  p {
+    display: inline-block;
+  }
+}
+
+.blue-btn {
+
+  background-color: @blue;
+  -webkit-transition: background-color 0.25s ease-in, color 0.25s ease-in; /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.25s ease-in, color 0.25s ease-in;
+  &:hover {
+    background-color: @blue-hover;
+  }
+  &:active {
+    background-color: @blue-active;
+  }
+}
+
+.morph-red-btn-sm {
+  text-align: center;
+  background-color: @red;
+  color: @white;
+  border: none;
+  -webkit-transition: background-color 0.25s ease-in, color 0.25s ease-in; /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.25s ease-in, color 0.25s ease-in;
+  &:hover {
+    background-color: @red-hover;
+  }
+  &:active {
+    background-color: @red-active;
+  }
+}

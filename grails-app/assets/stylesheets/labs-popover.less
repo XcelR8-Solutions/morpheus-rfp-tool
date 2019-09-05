@@ -1,0 +1,38 @@
+@import "colors.less";
+
+labs-popover {
+	display:none;
+	position: absolute;
+	&.shown {
+		display:block;
+	}
+	background-color: #fff;
+	width:250px;
+	border: 1px solid @graphgrey;
+	margin-left:10px;
+	overflow: visible;
+	&:before {
+		content:'';
+		position: absolute;
+		left:-10px;
+		top: 10px;
+		width: 0;
+		height: 0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+
+		border-right:10px solid @graphgrey;
+	}
+	&:after {
+		content:'';
+		position: absolute;
+		left:-8px;
+		top: 12px;
+		width: 0;
+		height: 0;
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+
+		border-right:8px solid #fff;
+	}
+}

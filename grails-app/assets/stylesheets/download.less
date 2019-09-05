@@ -1,0 +1,172 @@
+body[data-page*=spud-download] {
+  section.download-header {
+    height: 440px;
+    padding: 0;
+    border-bottom: 2px solid @red;
+    .header-logo {
+      text-align: center;
+      margin-top: 105px;
+    }
+    .download-headerbg:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+    .download-headerbg {
+      background: url('backgrounds/download_hero.png');
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+    }
+  }
+
+  section.download {
+    background-color: #f7f7f7;
+    border-bottom: 2px solid @red;
+    h2 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .download-container {
+      .download-header-container {
+        h3 {
+          font-size: 30px;
+          color: @hblack;
+          font-weight: 400;
+          font-family: 'Arvo', serif;
+        }
+        margin: 40px auto 0 auto;
+        max-width: 560px;
+        text-align: center;
+        p {
+          font-size: 13px;
+          color: @dkgray;
+          line-height: 25px;
+        }
+        a {
+          color: @blue;
+          text-decoration: none;
+        }
+      }
+      .download-form-container {
+        margin: 53px auto 125px;
+        max-width: 662px;
+        a {
+          color: @red;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        p.note {
+          text-align: center;
+          padding-bottom: 8px;
+          color: #999;
+          font-size: 13px;
+          letter-spacing: 2px;
+        }
+        dl:first-of-type {
+          background-color: #f7f7f7;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          dt, dd {
+            background-color: inherit;
+            padding-right: 5px;
+            font-weight: 400;
+          }
+        }
+        dl {
+          width: 100%;
+          overflow: hidden;
+          background: @white;
+          margin-bottom: 10px;
+          padding: 14px 0px 14px 25px;
+          dt {
+            float: left;
+            width: 25%;
+            background: @white;
+          }
+          dd {
+            float: left;
+            width: 25%;
+            background: @white
+          }
+        }
+        .textbox-labels {
+          display: block;
+          font-size: 14px;
+          color: @hblack;
+        }
+        .form-text-input {
+          width: 100%;
+          height: 32px;
+        }
+        input[type="text"]:first-of-type {
+          margin-bottom: 24px;
+        }
+        .checkbox {
+          margin-top: 25px;
+          label.checkbox-label {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-left: 30px;
+            margin-right: 15px;
+            font-size: 13px;
+            margin-bottom: 10px;
+          }
+          label.checkbox-label:before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            position: absolute;
+            left: 1px;
+            bottom: 1px;
+            background-color: @white;
+            outline: 1px solid @grey-deactivated;
+          }
+          input[type=checkbox] {
+            display: none;
+          }
+          input[type=checkbox]:checked + label:before {
+            content: "\2713";
+            font-size: 17px;
+            color: @blue;
+            text-align: center;
+            line-height: 15px;
+          }
+          a {
+            color: @hblack;
+          }
+        }
+        .info {
+          margin-top: 30px;
+          h3 {
+            margin-bottom: 5px;
+          }
+          h3 + p {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

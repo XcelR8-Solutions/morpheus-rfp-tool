@@ -1,0 +1,929 @@
+///*
+//*= require /webjars/bootstrap/3.3.7/css/bootstrap-theme
+//*= require /webjars/bootstrap/3.3.7/css/bootstrap
+//*= require /webjars/bootstrap-tagsinput/0.5/bootstrap-tagsinput
+//*/
+//@import "colors.less";
+//@import "fonts.less";
+//@import "bootstrap-overrides.less";
+//@import "buttons.less";
+//@import "flex-mixins.less";
+//
+//@base-images-url: "/assets";
+//
+//@font-face {
+//  font-family: 'Nunito';
+//  src: url('../fonts/nunito.light.ttf');
+//  font-weight: 300;
+//}
+//
+//@font-face {
+//  font-family: 'Nunito';
+//  src: url('../fonts/nunito.regular.ttf');
+//  font-weight: 400;
+//}
+//
+//.auth-header {
+//  background-color: @medium-black;
+//  border-bottom: 2px solid @blue;
+//  .main-container {
+//    padding-bottom: 0;
+//  }
+//}
+//
+//.main-container {
+//  margin: 0 auto;
+//  padding-bottom: 50px;
+//  @media (min-width: 1171px) {
+//    width: 1150px;
+//  }
+//  @media (max-width: 1170px) {
+//    width: 900px;
+//  }
+//  @media (max-width: 992px) {
+//    padding: 0;
+//    width: 100%;
+//  }
+//  @media (max-width: 768px) {
+//    padding: 0;
+//    width: 100%;
+//  }
+//  @media (max-width: 480px) {
+//
+//  }
+//}
+//
+//body {
+//  display: flex;
+//  min-height: 100vh;
+//  flex-direction: column;
+//  font-size: 14px;
+//  font-family: 'Nunito', sans-serif;
+//  font-weight: 300;
+//}
+//
+//.flex-wrapper {
+//  flex: 1;
+//}
+//
+//*:focus, *:active {
+//  outline: 0;
+//}
+//
+//.login-container, .register-container, .forgotPw-container, .resetPw-container {
+//  position: relative;
+//  padding: 0px;
+//  background-color: #3d3e40;
+//  margin: 0 auto;
+//}
+//
+//.signin-container, .user-forgotPw-form-container, .user-resetPw-form-container {
+//  min-height: 670px;
+//  overflow: auto;
+//  .flex-display();
+//  //-webkit-align-items: center;
+//  //-moz-align-items: center;
+//  //-ms-align-items: center;
+//  //align-items: center;
+//  .justify-content(space-around);
+//  padding: 168px 0 55px 0;
+///*
+//  label {
+//    text-transform: uppercase;
+//  }
+//  */
+//  h3.tagline {
+//    text-align: center;
+//  }
+//  a.login-btn {
+//    color: #57a4c1;
+//    font-size: 13px;
+//    text-transform: uppercase;
+//    padding: 6px 18px;
+//  }
+//  a.login-btn:hover {
+//    //text-decoration: underline;
+//  }
+//}
+//
+//.user-reg-form-container {
+//  min-height: 670px;
+//  overflow: auto;
+//  .flex-display();
+//  //-webkit-align-items: center;
+//  //-moz-align-items: center;
+//  //-ms-align-items: center;
+//  //align-items: center;
+//  .justify-content(space-around);
+//  padding: 118px 0 105px 0;
+//  label {
+//    text-transform: uppercase;
+//  }
+//  h3.tagline {
+//    text-align: center;
+//  }
+//  a.login-btn {
+//    color: #57a4c1;
+//    font-size: 13px;
+//    text-transform: uppercase;
+//    padding: 6px 18px;
+//  }
+//  a.login-btn:hover {
+//    //text-decoration: underline;
+//  }
+//}
+//
+//.copy-container {
+//  margin-top: 40px;
+//  text-align: center;
+//  .header {
+//    margin: 0 auto;
+//    max-width: 475px;
+//    h2 {
+//      font-size: 25px;
+//      color: @hblack;
+//    }
+//    h2 + p {
+//      font-size: 16px;
+//      color: @dkgray;
+//    }
+//
+//  }
+//
+//  .copy-content {
+//    margin-top: 65px;
+//    h5 {
+//      font-size: 20px;
+//      color: @hblack;
+//      margin-top: 9px;
+//    }
+//    h5 + p {
+//      font-size: 16px;
+//      color: @dkgray;
+//      max-width: 220px;
+//      margin: 0 auto;
+//    }
+//  }
+//
+//  img {
+//    height: 84px;
+//  }
+//}
+//
+//.register-container, .forgotPw-container, .restPw-container {
+//  .success-msg {
+//    margin-top: 27px;
+//    h3 {
+//      margin-top: -6px;
+//      margin-left: -175px;
+//      font-size: 20px;
+//      text-align: right;
+//      color: @white;
+//    }
+//    h3 + p {
+//      text-align: right;
+//      color: @mdgray;
+//    }
+//    h5 {
+//      margin-left: -159px;
+//    }
+//  }
+//
+//}
+//
+//.signin-container {
+//  h4 {
+//    color: #f46e5d;
+//    font-size: 11px;
+//    text-align: left;
+//    margin-top: 0;
+//    margin-bottom: 25px;
+//  }
+//  .btn {
+//    font-size: 16px;
+//    font-weight: 300;
+//  }
+//  .reset-pw-dialog {
+//    max-width: 400px;
+//    .reset-pw-content {
+//      .modal-header {
+//        padding: 20px 28px 0 25px;
+//        border-bottom: none;
+//        h4 {
+//          color: @hblack;
+//          font-size: 25px;
+//          margin: 0;
+//          margin-bottom: 0;
+//          border-bottom: none;
+//        }
+//        img.modalClose {
+//          height: 23px;
+//          width: 23px;
+//          float: right;
+//          cursor: pointer;
+//          position: relative;
+//          top: 2px;
+//        }
+//      }
+//      .modal-body {
+//        p {
+//          color: @dkgray;
+//          font-size: 15px;
+//          margin-bottom: 48px;
+//        }
+//        label {
+//          color: @hblack;
+//          font-size: 14px;
+//        }
+//        input[type=text] {
+//          border: 2px solid @gray;
+//          width: 100%;
+//        }
+//        .control-label {
+//          position: relative;
+//          top: 6px;
+//        }
+//        .form-control {
+//          background-image: url(../images/icons/requiredBar.png);
+//          background-position: 2px 1px;
+//          background-repeat: no-repeat;
+//        }
+//        .form-control:valid {
+//          background-image: url(../images/icons/requiredBar.png);
+//          background-position: 2px 1px;
+//          background-repeat: no-repeat;
+//        }
+//        padding: 20px 28px 20px 25px;
+//      }
+//      .modal-footer {
+//        border-top: none;
+//        padding: 22px 28px 28px 25px;
+//        .btn-container {
+//          width: 260px;
+//          float: right;
+//        }
+//        .btn-transparent {
+//          color: @mdgray;
+//          border: 1px solid @mdgray;
+//          -webkit-transition: background-color 0.25s ease-in, color 0.25s ease-in; /* For Safari 3.1 to 6.0 */
+//          transition: background-color 0.25s ease-in, color 0.25s ease-in;
+//          &:hover {
+//            border-color: @mdgray;
+//            background-color: @mdgray;
+//            color: @white;
+//          }
+//          &:active {
+//            border-color: @dkgray;
+//            background-color: @dkgray;
+//            color: @white;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//.btn-container {
+//  .btn {
+//    width: 47%;
+//  }
+//  .btn-transparent {
+//    color: @white;
+//  }
+////  margin-top: 7px;
+//  margin-top: 38px;
+//
+//  .register-btn {
+//
+//  }
+//  .login-btn {
+//    float: right;
+//  }
+//}
+//
+//.btn {
+//  border-radius: 0;
+//  color: @white;
+//  text-transform: capitalize;
+//  -webkit-transition: background-color 0.25s ease-in, color 0.25s ease-in; /* For Safari 3.1 to 6.0 */
+//  transition: background-color 0.25s ease-in, color 0.25s ease-in;
+//  cursor: pointer;
+//}
+//
+//.btn-transparent {
+//  border: 1px solid @mdgray;
+//  background-color: transparent;
+//  color: @white;
+//  &:hover {
+//    background-color: rgba(255, 255, 255, .2);
+//    color: @white;
+//  }
+//}
+//
+//.btn.btn-success {
+//  border: 1px solid @blue;
+//  background-color: @blue;
+//  &:hover {
+//    background-color: @blue-hover;
+//    border: 1px solid @blue-hover;
+//    border-color: @blue-hover;
+//  }
+//}
+//
+//.logo-container {
+//  padding-top: 33px;
+//  .logo-text-copy {
+//    margin-top: 20px;
+//    h1 {
+//      color: @white;
+//      text-align: left;
+//      margin: 0 0 10px 0;
+//      font-size: 26px;
+//      font-family: 'Nunito', sans-serif;
+//    }
+//    h1 + p {
+//      color: @blue;
+//      font-size: 23px;
+//      font-family: 'Nunito', sans-serif;
+//      text-align: left;
+//    }
+//  }
+//  img {
+//    width: 140px;
+//  }
+//}
+//
+//.welcomeMsg {
+//  text-align: center;
+//}
+//
+//.disclaimer {
+//  width: 400px;
+//  margin: 22px auto 0 auto;
+//  text-align: center;
+//  font-size: 12px;
+//  color: @grey-deactivated;
+//  text-transform: uppercase;
+//}
+//
+//.return {
+//  margin-bottom: 150px;
+//}
+//
+//.register {
+//  h1 {
+//    margin-top: 0;
+//  }
+//}
+//
+//.resetBtn {
+//  margin-bottom: 23px;
+//}
+//
+//.form-group {
+//  /*
+//  label {
+//    text-transform: uppercase;
+//    font-weight: 300;
+//    color: @hblack;
+//  }
+//  */
+//  /*
+//  input.form-control {
+//    border: none;
+//    background-color: transparent;
+//    border-radius: 0px;
+//    border-bottom: 1px solid @grey-deactivated;
+//  }
+//  */
+///*
+//  input[type=submit] {
+//    margin-top: 20px;
+//  }
+//  */
+//  /*
+//  input.error {
+//    border-bottom: 1px solid @red !important;
+//  }
+//  */
+//  /*
+//  .form-group {
+//    ul {
+//      padding: 3px 0 0 0;
+//      list-style: none;
+//      li {
+//        text-transform: capitalize;
+//        color: @red;
+//      }
+//    }
+//  }
+//*/
+//}
+//
+//.reset-form-container {
+//  width: 345px;
+//}
+//
+//.forgot-form-container {
+//  width: 345px;
+//}
+//
+//.auth-right-side {
+//  width: 345px;
+//  max-height: 315px;
+//  overflow: hidden;
+//
+//  .forms-container {
+//    overflow-y: hidden;
+//
+//    .login-form-container {
+//      .forgot-pw-container {
+//        text-align: right;
+//        margin-bottom: 34px;
+//        .forgot {
+//          cursor: pointer;
+//          color: @mdgray;
+//          font-size: 14px;
+//          -webkit-transition: color 0.25s ease-in; /* For Safari 3.1 to 6.0 */
+//          transition: color 0.25s ease-in;
+//          text-align: right;
+//          &:hover {
+//            color: @white;
+//            text-decoration: none;
+//          }
+//        }
+//      }
+//      .form-group {
+//        &:last-of-type {
+//          margin-bottom: 10px;
+//        }
+//      }
+//    }
+//    .register-form {
+//
+//    }
+//    /*
+//    .login-form {
+//      .form-group {
+//        label {
+//          text-transform: uppercase;
+//          font-weight: 300;
+//          color: @hblack;
+//        }
+//        input.form-control {
+//          border: none;
+//          background-color: transparent;
+//          border-radius: 0px;
+//          border-bottom: 1px solid @grey-deactivated;
+//        }
+//          input[type=submit] {
+//            margin-top: 20px;
+//          }
+//        input.error {
+//          border-bottom: 1px solid @red !important;
+//        }
+//        .form-group {
+//          ul {
+//            padding: 3px 0 0 0;
+//            list-style: none;
+//            li {
+//              text-transform: capitalize;
+//              color: @red;
+//            }
+//          }
+//        }
+//
+//        input[type="text"], input[type="password"], textarea {
+//          background-color: @medium-black;
+//          color: @mdgray;
+//          font-size: 16px;
+//          border-bottom: 1px solid @mdgray;
+//          -webkit-appearance: none;
+//          -moz-appearance: none;
+//          appearance: none;
+//          outline: none;
+//          border-radius: 0;
+//          padding-left: 5px;
+//          &:focus {
+//            box-shadow: none;
+//          }
+//        }
+//        input:required {
+//          box-shadow: none;
+//          border: none;
+//          border-bottom: 1px solid @mdgray;
+//          padding-left: 5px;
+//        }
+//        input:invalid {
+//          box-shadow: none;
+//          border: none;
+//          border-bottom: 1px solid @mdgray;
+//          padding-left: 5px;
+//        }
+//
+//      }
+//    }
+//    */
+//  }
+//}
+//
+//ul.error-list {
+//  padding-left: 12px;
+//  padding-top: 3px;
+//  li {
+//    list-style: none;
+//    color: @red;
+//  }
+//}
+//
+//.form-divide {
+//  color: @grey-deactivated;
+//}
+//
+//.form-intro-copy {
+//  h3 {
+//    color: @white;
+//    font-family: 'Nunito', sans-serif;
+//    margin: 0 0 8px 0;
+//    font-size: 26px;
+//    text-align: left;
+//  }
+//  h3 + p {
+//    color: @mdgray;
+//    font-size: 15px;
+//    margin: 0 0 21px 0;
+//  }
+//}
+//
+//.form {
+//  *:focus {
+//    outline: none;
+//    border: none;
+//  }
+//  textarea:focus, input:focus {
+//    outline: none;
+//    border: none;
+//  }
+//  input:-webkit-autofill {
+//    -webkit-box-shadow: 0 0 0px 1000px #3d3e40 inset;
+//    -webkit-border-radius: 0;
+//    -webkit-text-fill-color: @mdgray !important;
+//  }
+//  input:-webkit-autofill,
+//  input:-webkit-autofill:hover,
+//  input:-webkit-autofill:focus,
+//  input:-webkit-autofill:active {
+//    transition: background-color 5000s ease-in-out 0s;
+//  }
+//  /*
+//  input[type="text"], input[type="password"], textarea {
+//    background-color: @medium-black;
+//    color: @mdgray;
+//    font-size: 16px;
+//    border-bottom: 1px solid @mdgray;
+//    -webkit-appearance: none;
+//    -moz-appearance: none;
+//    appearance: none;
+//    outline: none;
+//    border-radius: 0;
+//    padding-left: 5px;
+//    &:focus {
+//      box-shadow: none;
+//    }
+//  }
+//  input:required {
+//    box-shadow: none;
+//    border: none;
+//    border-bottom: 1px solid @mdgray;
+//    padding-left: 5px;
+//  }
+//  input:invalid {
+//    box-shadow: none;
+//    border: none;
+//    border-bottom: 1px solid @mdgray;
+//    padding-left: 5px;
+//  }
+//  */
+//}
+//
+//.disclaimer {
+//  a {
+//    color: @text-blue;
+//  }
+//}
+//
+//.register-fields {
+////  input:focus:required:invalid {
+////    border: 1px solid @red;
+////  }
+//}
+//
+//#emailSent {
+//  margin-top: 105px;
+//  margin-bottom: 87px;
+//  p {
+//    font-size: 18px;
+//    text-transform: none
+//  }
+//  a {
+//    font-size: 13px;
+//    text-decoration: underline;
+//    color: @hblack;
+//  }
+//}
+//
+//#registerMessage {
+//  margin-bottom: 18px;
+//  margin-top: 50px;
+//  text-transform: none;
+//}
+//
+//.remember_me {
+//  font-size: 13px;
+//}
+//
+//.alert {
+//  p {
+//    margin: 0;
+//  }
+//}
+//
+//.alert.alert-danger {
+//  p {
+//    color: @red;
+//  }
+//}
+//
+//p.build-version {
+//  color: @grey-deactivated;
+//  position: relative;
+//  top: 3px;
+//  text-transform: lowercase;
+//  font-size: 12px;
+//}
+//
+//.checkboxContainer {
+//  input[type=checkbox] {
+//    margin-right: 2px;
+//  }
+//  input[type=checkbox]:before {
+//    content: "";
+//    display: inline-block;
+//    width: 16px;
+//    height: 16px;
+//  }
+//  input[type=checkbox]:checked:before {
+//    background-color: #ffffff;
+//    background-image: url("@{base-images-url}/icons/login_checkmark.svg");
+//    background-size: 18px;
+//    background-repeat: no-repeat;
+//    background-position-y: -2px;
+//  }
+//}
+//
+////FOOTER
+//footer {
+//  margin-top: 40px;
+//  border-top: 1px solid @gray;
+//  .footer-container {
+//    padding: 22px 0 38px 0;
+//
+//    div.footer-logo {
+//      float: left;
+//      img {
+//        width: 40px
+//      }
+//    }
+//    div.footer-words {
+//      margin-left: 50px;
+//      margin-top: 4px;
+//      p {
+//        margin: 0;
+//        color: @mdgray;
+//        font-size: 13px;
+//      }
+//    }
+//  }
+//}
+//
+///*
+//  This madness ends now
+//*/
+//// Button Styles
+//
+//button, a.button, input[type=submit] {
+//  border: 1px solid @blue;
+//  background-color: @blue;
+//  color: @white;
+//  font-size: 16px;
+//  padding: 10px 20px;
+//  display: inline-block;
+//  //width: 100%;
+//  text-align: center;
+//
+//  &:hover {
+//    color: #fff;
+//    background-color: @blue;
+//    border-color: @blue;
+//    text-decoration: none;
+//  }
+//  &:focus {
+//    color: #fff;
+//    background-color: @blue;
+//    border-color: @blue;
+//    text-decoration: none;
+//  }
+//  &:active {
+//    color: @white;
+//    background-color: @dkblue;
+//    border-color: @dkblue;
+//  }
+//  &.grey {
+//    border-color: @mdgray;
+//    color: @mdgray;
+//    &:hover {
+//      color: #fff;
+//      background-color: @mdgray;
+//      border-color: @mdgray;
+//    }
+//    &:focus {
+//      color: #fff;
+//      background-color: @dkgray;
+//      border-color: @dkgray;
+//    }
+//  }
+//  &.transparent {
+//    border-color: @mdgray;
+//    color: @white;
+//    background-color: @medium-black;
+//    &:hover {
+//      color: @white;
+//      background-color: fade(@white,20%);
+//      border: 1px solid @mdgray;
+//    }
+//    &:focus {
+//      color: @white;
+//      background-color: fade(@white,20%);
+//      border: 1px solid @mdgray;
+//    }
+//  }
+//  &.blue {
+//    background-color: @blue;
+//    color: @white;
+//  }
+//  &.margin-right {
+//    margin-right: 15px;
+//  }
+//  &.align-right {
+//    float: right;
+//  }
+//  &.register {
+//    width: 45%;
+//  }
+//}
+//
+//.row.no-gutter {
+//  margin-left: 0;
+//  margin-right: 0;
+//}
+//
+//.row.no-gutter [class*='col-']:not(:first-child),
+//.row.no-gutter [class*='col-']:not(:last-child) {
+//  padding-right: 0;
+//  padding-left: 0;
+//}
+//
+////  Registration form style
+//.register-container {
+//  .forms-container {
+//    width: 373px;
+//    .register-form {
+//      margin-top: 36px;
+//
+//      input:-webkit-autofill {
+//        -webkit-box-shadow: 0 0 0px 1000px @medium-black inset;
+//        -webkit-border-radius: 0;
+//        -webkit-text-fill-color: @white !important;
+//      }
+//      input:-webkit-autofill,
+//      input:-webkit-autofill:hover,
+//      input:-webkit-autofill:focus,
+//      input:-webkit-autofill:active {
+//        transition: background-color 5000s ease-in-out 0s;
+//      }
+//
+//      input[type=text], input[type=password], select, textarea {
+//        color: @white;
+//        background-color: @medium-black;
+//        border-bottom: 1px solid @mdgray;
+//        border-top: none;
+//        border-left: none;
+//        border-right: none;
+//        box-shadow: none;
+//        //        border: none;
+//        padding-left: 5px;
+//        width: 100%;
+//        font-size: 16px;
+//        &.error {
+//          border-bottom: 1px solid @red;
+//        }
+//      }
+//
+//      textarea:focus, input[type=text]:focus, input[type=password]:focus {
+//        color: @white;
+//        background-color: @medium-black;
+//        border-bottom: 1px solid @white;
+//        font-size: 16px;
+//      }
+//
+//      .button-container {
+//        max-width: 340px;
+//        margin-top: 36px;
+//      }
+//
+//      .form-group {
+//        margin-bottom: 12px;
+//        min-height: 28px;
+//        input {
+//          max-width: 340px;
+//        }
+//      }
+//
+//      .error-image {
+//        width: 28px;
+//        height: 28px;
+//        border: none;
+//        outline: none;
+//      }
+//
+//      .popover .arrow {
+//        left: 92%!important;
+//      }
+//      .popover {
+//        font-size: 13px;
+//        color: @hblack;
+//        border-radius: 0px;
+//        width: 200px;
+//      }
+//      .popover .popover-content{
+//        padding: 12px;
+//      }
+//
+//
+//    }
+//  }
+//}
+//
+//.forms-container {
+//  .login-form-container {
+//    .login-form {
+//
+//      input:-webkit-autofill {
+//        -webkit-box-shadow: 0 0 0px 1000px @medium-black inset;
+//        -webkit-border-radius: 0;
+//        -webkit-text-fill-color: @white !important;
+//      }
+//      input:-webkit-autofill,
+//      input:-webkit-autofill:hover,
+//      input:-webkit-autofill:focus,
+//      input:-webkit-autofill:active {
+//        transition: background-color 5000s ease-in-out 0s;
+//      }
+//
+//      input[type=text], input[type=password], select, textarea {
+//        color: @white;
+//        background-color: @medium-black;
+//        border-bottom: 1px solid @mdgray;
+//        border-top: none;
+//        border-left: none;
+//        border-right: none;
+//        box-shadow: none;
+//        //        border: none;
+//        padding-left: 5px;
+//        width: 100%;
+//        font-size: 16px;
+//      }
+//
+//      textarea:focus, input[type=text]:focus, input[type=password]:focus {
+//        color: @white;
+//        background-color: @medium-black;
+//        border-bottom: 1px solid @white;
+//        font-size: 16px;
+//      }
+//
+//      .button-container {
+//        margin-top: 36px;
+//        .left-button {
+////          margin-right: 14px;
+//          padding-right: 14px;
+//        }
+//        .right-button {
+////          margin-left: 14px;
+//          padding-left: 14px;
+//          float: right;
+//        }
+//      }
+//    }
+//  }
+//}
+//

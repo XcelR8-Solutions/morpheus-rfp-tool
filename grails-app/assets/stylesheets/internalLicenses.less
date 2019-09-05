@@ -1,0 +1,129 @@
+body[data-page*=applianceLicense-show] {
+  .license-key-row {
+    width: 90%;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    .license-key {
+      -ms-word-break: break-all;
+      /* Be VERY careful with this, breaks normal words wh_erever */
+      word-break: break-all;
+      /* Non standard for webkit */
+      word-break: break-word;
+      padding: 5px;
+      background-color: #faffbd;
+    }
+  }
+
+  div.license-info-header {
+    h1 {
+      text-transform: capitalize;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 20px;
+      span {
+        color: @red;
+      }
+    }
+  }
+  .key-status {
+    float: right;
+    border: 1px solid @gray;
+    padding: 4px 10px;
+    margin-right: 10px;
+    span {
+      font-weight: 500;
+    }
+    .reviewed {
+      text-transform: uppercase;
+      color: @green;
+    }
+    .approved {
+      text-transform: uppercase;
+      color: @green;
+    }
+    .good {
+      text-transform: uppercase;
+      color: @green;
+    }
+    .pending {
+      text-transform: uppercase;
+      color: @yellow;
+    }
+    .expired {
+      text-transform: uppercase;
+      color: @red;
+    }
+  }
+}
+
+body[data-page*=applianceLicense-index] {
+  .keys {
+    .keys-container {
+      .key-requests, .keys-approved, .keys-rejected {
+        // padding-top: 20px;
+        margin-bottom: 43px;
+      }
+      .licenses-container {
+        margin-top: 46px;
+      }
+      .create-license-form  {
+        .col-sm-3 {
+          margin-left: -15px;
+        }
+      }
+    }
+  }
+
+  .table {
+    width: 100%;
+
+    .table-header {
+      .table-heading {
+        padding: 10px;
+        font-size: 14px;
+        color: @hblack;
+
+        &.delete {
+          display: none;
+        }
+
+        &.request-link {
+          display: none;
+        }
+      }
+    }
+
+    tr {
+      td.status-col {
+        padding: 8px 0 0 8px;
+        .delete-btn {
+          height: 20px;
+          padding-left: 5px;
+        }
+        img.happy-statuses {
+          height: 30px;
+          width: 30px;
+        }
+        .enabled {
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+.btn-container {
+  .btn {
+    text-transform: none;
+    color: @dkblue;
+    border: 1px solid @blue;
+    border-radius: 0;
+    background-color: transparent;
+
+    &:hover {
+      color: @white;
+      border: 1px solid @blue;
+      background-color: @blue;
+    }
+  }
+}

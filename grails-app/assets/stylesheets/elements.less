@@ -1,0 +1,32 @@
+circle-progress, spark-line {
+	display: inline-block;
+}
+
+bar-chart {
+	display: inline-block;
+	height: 100px;
+	width: 200px;
+	svg {
+		height: 100%;
+		width:100%;
+	}
+	text {
+		font-size: 15px;
+		color: @hblack;
+	}
+	.label {
+		font-size: 13px;
+		font-weight: 300;
+		color: @mdgray;
+		fill: @mdgray;
+	}
+	.green {
+		fill:url("#chart-gradient-green");
+	}
+	.red {
+		fill:url("#chart-gradient-red");
+	}
+	.yellow {
+		fill:url("#chart-gradient-yellow");
+	}
+}

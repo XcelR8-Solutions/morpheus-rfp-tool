@@ -1,0 +1,186 @@
+body[data-page*=forum-show] {
+  .forum-post-show-page {
+
+    .forum-post-header {
+      h1 {
+        margin-bottom: 3px;
+        font-size: 37px;
+        color: #2c6d91;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        text-transform: capitalize;
+        span {
+          font-size: 14px;
+          font-family: 'Nunito', sans-serif
+        }
+        span.sub-text {
+
+        }
+        span.sub-text-bold {
+          font-weight: 500;
+          text-transform: uppercase;
+          color: @hblack;
+          position: relative;
+          top: -4px;
+        }
+      }
+      h1 + p {
+        font-weight: 500;
+        color: @hblack;
+        font-size: 18px;
+      }
+    }
+    .forum-post-main-container {
+      padding: 0;
+      margin: 10px 0;
+      div.post-details-container {
+        border-top: 1px solid @gray;
+        border-bottom: 1px solid @gray;
+        p.post-details {
+          font-size: 18px;
+          font-family: 'Nunito', sans-serif;
+          color: @hblack;
+          margin-bottom: 20px;
+          margin-top: 10px;
+        }
+        div.tag-container {
+          p {
+            font-size: 14px;
+            font-family: 'Nunito', sans-serif;
+            color: @hblack;
+            span.tags {
+
+            }
+          }
+        }
+      }
+      div.post-feedback-container {
+        h5 {
+          font-size: 14px;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 500;
+          color: @hblack;
+        }
+      }
+      div.comments-container {
+        div.comment-container {
+          padding: 10px;
+          margin: 25px 0;
+          background-color: #f7f7f7;
+          div.comment-header {
+            p {
+              font-size: 14px;
+              font-family: 'Nunito', sans-serif;
+              color: @hblack;
+              span.comment-author {
+                text-transform: uppercase;
+                font-weight: 500;
+              }
+              &:first-of-type{
+                margin-bottom: 0;
+              }
+            }
+          }
+          div.comment-body {
+            border-top: 1px solid @gray;
+            padding-top: 10px;
+            p {
+              font-size: 18px;
+              font-family: 'Nunito', sans-serif;
+              color: @hblack;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body[data-page*=forum-index] {
+  .forum {
+    .main {
+      .forum-header {
+        h1 {
+          font-size: 37px;
+          float: left;
+          margin: 0;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 500;
+          color: #353535;
+        }
+        .svg.forum-icon {
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          path {
+            fill: #a997b4;
+          }
+        }
+
+        .filter-paginate-container {
+          float: right;
+          padding: 4px 10px;
+          margin-right: 10px;
+          .select-filters {
+            .forum-filter {
+              border-color: @blue;
+              color: @blue;
+            }
+          }
+        }
+        height: 45px;
+        border-bottom: 1px solid @gray;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
+    }
+    .forum-sidebar {
+      .input-group.filters {
+        margin-top: 25px;
+
+        input.phrase {
+          height: 35px;
+          float: right;
+          max-width: 275px;
+        }
+      }
+      .category-container {
+        margin-top: 20px;
+        border: 1px solid @gray;
+        float: right;
+        width: 323px;
+        padding-left: 11px;
+        h5 {
+          font-weight: 600;
+          margin-bottom: 7px;
+        }
+        .categories {
+          ul {
+            list-style: none;
+            padding-left: 0;
+            li {
+              color: @grey-deactivated;
+              &:hover {
+                color: @hblack;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 480px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.form-group {
+			height: auto;
+			margin: 0 0 15px 0;
+			label {
+				margin-left: 15px;
+			}
+		}
+}
