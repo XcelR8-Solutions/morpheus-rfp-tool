@@ -57,7 +57,6 @@ header {
 
 header.top-header {
   background-color: @hblack;
-  border-bottom: 2px solid @blue;
   .flex(0 0 auto);
 
   nav {
@@ -130,8 +129,9 @@ header.top-header {
             }
             span.company-name {
               position: relative;
-              top: 3px;
-              margin-left: 10px;
+              top: 5px;
+              margin-left: 50px;
+              font-size: 20px;
             }
           }
           padding-right: 26px;
@@ -189,7 +189,7 @@ header.sub-header {
           a {
             text-decoration: none;
             color: @dkgray;
-            font-size: 14px;
+            font-size: 16px;
             padding-top: 19px;
             padding-bottom: 16px;
           }
@@ -212,6 +212,11 @@ header.sub-header {
       }
     }
   }
+}
+
+#logo {
+    padding: 5px 0;
+    width: 200px;
 }
 
 //FOOTER

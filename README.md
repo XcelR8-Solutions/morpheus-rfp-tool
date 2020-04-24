@@ -8,4 +8,7 @@
 1. grails run-app
 
 ## Packaging for distro
+1. grails war
+
+
 

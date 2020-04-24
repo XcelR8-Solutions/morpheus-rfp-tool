@@ -5,7 +5,7 @@
                 <ul class="main-links flex-start">
                     <li>
                         <g:link class="logo" uri="/">
-                            <asset:image src="logos/morpheus_logo_symbol_original.svg"/><span class="company-name">MORPHEUS RFP TOOL</span></g:link>
+                            <asset:image src="logos/ui_logo.svg" id="logo"/><span class="company-name">MORPHEUS RFP TOOL</span></g:link>
                     </li>
                 </ul>
             </div>
