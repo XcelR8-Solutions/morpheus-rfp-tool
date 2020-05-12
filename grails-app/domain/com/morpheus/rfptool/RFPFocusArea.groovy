@@ -8,8 +8,8 @@ class RFPFocusArea {
     Date lastUpdated
 
     static constraints = {
-    	name(nullable:false)
-    	description(nullable:true)
+    	name nullable:false
+    	description nullable:true
     }
 
     public String toString() {

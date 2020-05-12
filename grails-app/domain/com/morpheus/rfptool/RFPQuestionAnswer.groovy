@@ -8,8 +8,8 @@ class RFPQuestionAnswer {
     Date lastUpdated
 
     static constraints = {
-    	question(nullable:false)
-    	answer(nullable:false)
+    	question nullable:false
+    	answer nullable:false
     }
 
     public String toString() {

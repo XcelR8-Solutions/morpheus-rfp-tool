@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-sm-9">
                 <div class="section-container">
-                	Question and Answer
+                	<p class="section-title">QUESTION AND ANSWER</p>
                 </div>
             </div>
         </div>

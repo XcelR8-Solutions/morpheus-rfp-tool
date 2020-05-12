@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-sm-9">
                 <div class="section-container">
-                	Search
+                	<p class="section-title">SEARCH</p>
                 </div>
             </div>
         </div>

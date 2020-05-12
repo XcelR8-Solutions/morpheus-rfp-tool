@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-sm-9">
                 <div class="section-container">
-                	RFP Tool Home!
+                	<p class="section-title">RFP TOOL HOME</p>
                 </div>
             </div>
         </div>
