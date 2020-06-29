@@ -108,17 +108,24 @@ environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:mysql://localhost:3306/rfp_database?serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=UTF-8&characterSetResults=UTF-8
-            username: rfp_user
-            password: d00kie!!
+            #url: jdbc:mysql://localhost:3306/rfp_database?serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+            #username: rfp_user
+            #password: d00kie!!
+            url: jdbc:mysql://${MYSQL_IP}:3306/rfp_database?serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+            username: ${MYSQL_USERNAME}
+            password: ${MYSQL_PASSWORD}
     test:
         dataSource:
-            dbCreate: update
-            url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            dbCreate: create-drop
+            url: jdbc:mysql://${MYSQL_IP}:3306/rfp_database?serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+            username: ${MYSQL_USERNAME}
+            password: ${MYSQL_PASSWORD}
     production:
         dataSource:
-            dbCreate: none
-            url: jdbc:h2:./prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            dbCreate: create-drop
+            url: jdbc:mysql://${MYSQL_IP}:3306/rfp_database?serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+            username: ${MYSQL_USERNAME}
+            password: ${MYSQL_PASSWORD}
             properties:
                 jmxEnabled: true
                 initialSize: 5

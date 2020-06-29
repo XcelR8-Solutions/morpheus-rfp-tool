@@ -10,3 +10,4 @@ out/
 .project
 .settings
 .classpath
+set_env.sh
