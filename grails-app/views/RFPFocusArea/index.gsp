@@ -55,6 +55,7 @@
                                 </table>
                             </div>
                         </div>
+                        <div style="padding:20px">&nbsp;</div>
                         <div class="paging-container-bottom row">
                             <div class="col-sm-12">
                                 <g:link namespace="rfpFocusArea" controller="rfp-focus-area" action="create" class="button">Add RFP Focus Area</g:link>

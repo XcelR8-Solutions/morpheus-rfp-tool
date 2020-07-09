@@ -10,6 +10,20 @@ class RFPFocusAreaController {
     }
 
     def create() { 
+    	 render view: 'create'
+    }
 
+    def cancel() {
+    	redirect action: 'index'
+    }
+
+    def save() {
+    	log.debug "save params: ${params}"
+    	flash.message = "RFP Focus Area created successfully!"
+
+    	def rfpFA = new RFPFocusArea(params)
+        rfpFA.save()
+
+    	redirect action: 'index'
     }
 }

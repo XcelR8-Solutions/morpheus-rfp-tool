@@ -8,8 +8,10 @@ class UrlMappings {
                 // apply constraints here
             }
         }
-        "/rfp-focus-area"(controller: 'RFPFocusArea')
+        "/rfp-focus-area/"(controller: 'RFPFocusArea')
+        "/rfp-focus-area/$action"(controller: 'RFPFocusArea')
         "/rfp-question-answer"(controller: 'RFPQuestionAnswer')
+        "/rfp-question-answer/$action"(controller: 'RFPQuestionAnswer')
         "/search"(controller: 'Search')
         "/"(view:'/index')
         "500"(view:'/error')
